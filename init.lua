@@ -283,6 +283,13 @@ require('lazy').setup {
         ['<leader>r'] = { name = '[R]ename', _ = 'which_key_ignore' },
         ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
         ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
+        ['<leader>h'] = { name = '[H]arpoon', _ = 'which_key_ignore' },
+
+        -- Hide harpoon keymaps
+        ['<leader>1'] = 'which_key_ignore',
+        ['<leader>2'] = 'which_key_ignore',
+        ['<leader>3'] = 'which_key_ignore',
+        ['<leader>4'] = 'which_key_ignore',
       }
     end,
   },
