@@ -187,6 +187,9 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move selection down', remap = false, silent = true })
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selection up', remap = false, silent = true })
 
+-- Make file executable
+vim.keymap.set('n', '<leader>fx', ':!chmod +x %<CR>', { desc = 'Make file executable' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -284,6 +287,7 @@ require('lazy').setup {
         ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
         ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
         ['<leader>h'] = { name = '[H]arpoon', _ = 'which_key_ignore' },
+        ['<leader>f'] = { name = '[F]ile', _ = 'which_key_ignore' },
 
         -- Hide harpoon keymaps
         ['<leader>1'] = 'which_key_ignore',
