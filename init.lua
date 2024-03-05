@@ -187,6 +187,10 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move selection down', remap = false, silent = true })
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selection up', remap = false, silent = true })
 
+-- Indent without losing selection
+vim.api.nvim_set_keymap('v', '>', '>gv', { desc = 'Indent right', noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<', '<gv', { desc = 'Indent left', noremap = true, silent = true })
+
 -- Make file executable
 vim.keymap.set('n', '<leader>fx', ':!chmod +x %<CR>', { desc = 'Make file executable' })
 
