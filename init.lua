@@ -774,7 +774,7 @@ require('lazy').setup {
       require('mini.surround').setup()
 
       -- Custom statusline config
-      require 'lua/custom/user/statusline'
+      require 'custom.user.statusline'
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
