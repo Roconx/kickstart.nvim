@@ -138,7 +138,7 @@ vim.opt.splitbelow = true
 --  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = {
-  eol = '↲',
+  -- eol = '↲',
   tab = '» ',
   trail = '·',
   extends = '<',
